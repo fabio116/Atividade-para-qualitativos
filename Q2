@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        const vendas= {
+            "Celular": 150,
+            "Fone de ouvido": 55,
+            "Pendrive": 37,
+            "Caixa de áudio": 28,
+            "Tablet": 32,
+            "Carregador portátil": 29
+    };
+          const estoque = {
+            "Celular": 38,
+            "Fone de ouvido": 10,
+            "Pendrive": 17,
+            "Caixa de áudio": 8,
+            "Tablet": 5,
+            "Carregador portátil": 15
+    };
+     
+        let final=Object.keys(vendas);
+        let  estoqueFinal={}
+        console.log(vendas);
+
+
+        function mostraEstoque(vendas,estoque){
+            for(let i=0;i<final.length;i++){
+               estoqueFinal[final[i]]=vendas[final[i]]-estoque[final[i]];
+                // console.log(vendas[final[i]]-estoque[final[i]]);
+            }
+
+            }
+      mostraEstoque(vendas,estoque);
+      console.log(estoqueFinal);
+
+    </script>
+ </body>
+ </html>

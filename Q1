@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+        <title>
+            <h2>Sistema de Avaliação Oline</h2>
+        </title>
+    </header>
+        <script>
+            let webSite={
+              
+                titulo:"Sistema de Avaliação Online",
+                url:"https//www.sistemaOnlineAv.com.br",
+                tags: ["Biologia","Historia","Matemática","Portugues"],
+                adm:["Direito do Consumindor","Marketing"],
+                Inf:["HTML","PHP","JavaScript"],
+                enf:["Saude da mulher","Primeiro Socorros"],
+                escola:function(){
+                  return "EEEP Amélia Figueirendo de Lavor";
+                }
+                  
+            };
+              console.log(webSite.titulo);
+              console.log(webSite.url);
+              console.log(webSite.tags[2]);
+              console.log(webSite.adm[1]);
+              console.log(webSite.escola());
+
+        </script>
+  </body>
+</html>
